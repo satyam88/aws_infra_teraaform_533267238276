@@ -66,7 +66,7 @@ resource "aws_instance" "private_instance" {
   ami           = data.aws_ami.amazon_linux_2025.id
   instance_type = var.instance_type
   subnet_id     = data.aws_subnet.private.id
-  count         = "2"
+  count         = "1"
   tags = {
     Name = "private-instance"
     env  = "prod"
