@@ -43,7 +43,7 @@ data "aws_ami" "amazon_linux_2025" {
 
   filter {
     name   = "architecture"
-    values = ["x86_64"]   # 👈 ensure Intel/AMD AMI
+    values = ["x86_64"] # 👈 ensure Intel/AMD AMI
   }
 
   owners = ["137112412989"]
